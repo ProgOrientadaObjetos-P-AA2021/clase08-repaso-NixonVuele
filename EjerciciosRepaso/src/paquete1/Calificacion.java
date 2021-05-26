@@ -18,7 +18,7 @@ public class Calificacion {
     public Calificacion(double n, String nombre) {
         nota = n;
         nombreMateria = nombre;
-        
+
     }
 
     public void establecerNota(double n) {
@@ -28,10 +28,14 @@ public class Calificacion {
     public void establecerNombreMateria(String n) {
         nombreMateria = n;
     }
-    
+
+    /*Para que reciba los valores que el usuario le envia, el 
+    atributo profesor tiene que ser profesor = n, donde n es el
+    objeto de tipo Profesor que el usuario envia;
+    }
+     */
     public void establecerProfesor(Profesor n) {
-        Profesor p1 = new Profesor("Connie Palmer", "contratado");
-        profesor = p1;
+        profesor = n;
     }
 
     public double obtenerNota() {
@@ -41,7 +45,7 @@ public class Calificacion {
     public String obtenerNombreMateria() {
         return nombreMateria;
     }
-    
+
     public Profesor obtenerProfesor() {
         return profesor;
     }
